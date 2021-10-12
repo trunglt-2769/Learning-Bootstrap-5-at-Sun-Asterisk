@@ -1,0 +1,17 @@
+@use '../custom.scss' as *;
+
+.brand {
+  padding: 64px 0;
+
+  &__desc {
+    color: $light-text-color;
+    padding: 48px 0;
+    text-align: center;
+  }
+
+  &__logo {
+    &-img {
+      object-fit: contain;
+    }
+  }
+}

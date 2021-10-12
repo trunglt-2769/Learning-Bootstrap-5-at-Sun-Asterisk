@@ -1,0 +1,32 @@
+@use '../custom.scss' as *;
+
+.heading {
+  font-family: "PT Serif", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  font-size: 1.2rem;
+  font-weight: 700;
+  &--xsmall {
+    font-size: 0.8333rem;
+  }
+  &--medium {
+    font-size: 2rem;
+  }
+  &--large {
+    font-size: 3.6rem;
+  }
+  @media (max-width: 991.99px) {
+    &--large {
+      font-size: 2.2rem;
+    }
+  }
+  &--blue {
+    color: $blue-color;
+  }
+  &--orange {
+    color: $orange-color;
+  }
+  &--green {
+    color: $green-color;
+  }
+}

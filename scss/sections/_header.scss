@@ -1,0 +1,19 @@
+@use '../custom.scss' as *;
+@use '../components/mixins' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  @include gradient;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+
+  .nav-link:hover {
+    color: $orange-color !important;
+    transition: all 0.3s ease-in-out;
+  }
+}

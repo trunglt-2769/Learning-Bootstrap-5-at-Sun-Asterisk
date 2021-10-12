@@ -1,0 +1,39 @@
+@use '../custom.scss' as *;
+
+.tutorial {
+  &__step {
+    height: 70px;
+    width: 70px;
+    line-height: 62px;
+    border-radius: 50%;
+    text-align: center;
+
+    &--light-blue-bg {
+      background-color: $light-blue-color;
+    }
+
+    &--light-orange-bg {
+      background-color: $light-orange-color;
+    }
+
+    &--light-green-bg {
+      background-color: $light-green-color;
+    }
+  }
+
+  &__desc {
+    color: $light-text-color;
+    text-align: center;
+  }
+
+  &__heading {
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

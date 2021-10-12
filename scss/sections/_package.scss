@@ -1,0 +1,67 @@
+@use "../custom.scss" as *;
+
+.package {
+  &__card {
+    position: relative;
+    margin-top: 15px;
+    padding: 40px;
+    border-radius: 20px;
+    height: 500px;
+    overflow: hidden;
+
+    &--light-blue-bg {
+      background-color: $light-blue-color !important;
+    }
+
+    &--light-orange-bg {
+      background-color: $light-orange-color !important;
+    }
+
+    &--light-green-bg {
+      background-color: $light-green-color !important;
+    }
+  }
+
+  &__card-content {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__card-deco {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("../../assets/img/card/card-basic-deco.png");
+    background-position: top right;
+    background-size: auto;
+    background-repeat: no-repeat;
+
+    &--average {
+      background-image: url("../../assets/img/card/card-average-deco.png");
+    }
+
+    &--profession {
+      background-image: url("../../assets/img/card/card-profession-deco.png");
+    }
+  }
+
+  &__card-title {
+    color: $light-text-color;
+  }
+
+  &__card-list {
+    line-height: 2rem;
+    color: $light-text-color;
+    i {
+      margin-right: 8px;
+    }
+  }
+
+  &__card-btn-container {
+    margin: 40px 0 20px;
+    text-align: center;
+  }
+}

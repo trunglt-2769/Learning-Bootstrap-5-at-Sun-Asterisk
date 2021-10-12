@@ -1,0 +1,40 @@
+@use '../custom.scss' as *;
+
+.review {
+  &__person-img {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 20px;
+      width: 325px;
+      height: 325px;
+      z-index: -1;
+      background-color: $light-orange-color;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 991.99px) {
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 50% !important;
+        width: 100px;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__prev-btn {
+    left: 8px;
+  }
+
+  &__next-btn {
+    right: auto;
+    left: 64px;
+  }
+}

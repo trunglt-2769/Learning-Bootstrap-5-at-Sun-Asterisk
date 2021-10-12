@@ -1,0 +1,47 @@
+@use '../custom.scss' as *;
+
+.btn-rounded {
+  border-radius: 50rem;
+  min-width: 184px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+
+  &--orange {
+    color: $white-color;
+    background-color: $orange-color;
+
+    &:hover {
+      transform: scale(1.05);
+      color: $white-color;
+      background-color: $orange-color--hover;
+    }
+  }
+
+  &--orange-outline {
+    color: $orange-color !important;
+    border-color: $orange-color;
+
+    &:hover {
+      transform: scale(1.05);
+      color: $white-color !important;
+      background-color: $orange-color;
+    }
+  }
+}
+
+.carousel-btn {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: $orange-color;
+  transition: all 0.25s ease;
+
+  &--medium {
+    height: 80px;
+    width: 80px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

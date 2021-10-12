@@ -1,0 +1,32 @@
+@use "../custom.scss" as *;
+
+.service {
+  &__card {
+    border: none;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    background-color: $light-blue-color;
+    border-radius: 16px;
+    overflow: hidden;
+
+    &--green {
+      background-color: $light-green-color;
+
+      @media (min-width: 992px) {
+        & > div {
+          flex-direction: row-reverse !important;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    &__card-body {
+      padding: 120px !important;
+    }
+  }
+
+  &__card-img {
+    width: 100%;
+  }
+}

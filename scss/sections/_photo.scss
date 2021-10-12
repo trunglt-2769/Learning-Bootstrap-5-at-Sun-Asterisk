@@ -1,0 +1,41 @@
+@use '../custom.scss' as *;
+
+.photo {
+  &__main-title {
+    margin-bottom: 20px;
+  }
+
+  &__category-item {
+    .nav-link {
+      color: $light-text-color;
+      font-weight: 700;
+    }
+
+    .nav-link.active {
+      background-color: transparent;
+      color: $blue-color;
+      border-bottom: 0.15rem solid $blue-color;
+      border-radius: 0;
+    }
+  }
+
+  &__card {
+    border-radius: 0.8rem;
+    overflow: hidden;
+  }
+
+  .tab-pane.active {
+    animation: slide-down 0.8s ease-out;
+  }
+
+  @keyframes slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(30%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

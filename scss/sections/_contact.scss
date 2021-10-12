@@ -1,0 +1,38 @@
+.contact {
+  &__card {
+    position: relative;
+    border-radius: 26px;
+    overflow: hidden;
+  }
+
+  &__card-bg {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    background-image: url(../../assets/img/start/start-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+
+  &__card-info {
+    padding: 80px 16px;
+    text-align: center;
+  }
+
+  &__card-heading {
+    padding-bottom: 46px;
+  }
+
+  &__form {
+    height: 100%;
+    border-radius: 26px;
+    padding: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    @media (max-width: 991.99px) {
+      margin-top: 14px;
+    }
+  }
+}

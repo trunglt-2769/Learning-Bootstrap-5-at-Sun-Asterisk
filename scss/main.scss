@@ -1,0 +1,39 @@
+// IMPORT THE COMPONENTS
+@use './components/button';
+@use './components/heading';
+
+// IMPORT THE SECTIONS
+@use './sections/header';
+@use './sections/about';
+@use './sections/brand';
+@use './sections/tutorial';
+@use './sections/review';
+@use './sections/package';
+@use './sections/photo';
+@use './sections/service';
+@use './sections/faq';
+@use './sections/contact';
+@use './sections/footer';
+
+@use './components/mixins';
+
+.navbar-light {
+  .navbar-nav {
+    .nav-link {
+      color: rgb(0 0 0);
+    }
+  }
+}
+
+.card {
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  z-index: 1;
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}

@@ -1,0 +1,8 @@
+@use "../custom.scss" as *;
+
+.faq {
+  &__desc {
+    color: $light-text-color;
+    margin-bottom: 48px;
+  }
+}

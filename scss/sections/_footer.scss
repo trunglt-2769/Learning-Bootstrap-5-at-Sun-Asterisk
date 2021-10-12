@@ -1,0 +1,57 @@
+@use '../custom.scss' as *;
+
+.footer {
+  padding-top: 80px;
+
+  &__title {
+    font-size: 1.4rem;
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    a {
+      color: $light-text-color;
+      text-decoration: none;
+      line-height: 2.4rem;
+    }
+  }
+
+  &__contact-info {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 2.4rem;
+    i {
+      padding-right: 8px;
+      &[class*="phone"] {
+        color: $blue-color;
+      }
+      &[class*="envelope"] {
+        color: $orange-color;
+      }
+      &[class*="map"] {
+        color: $green-color;
+      }
+    }
+  }
+
+  &__social {
+    padding: 1.8rem 0;
+    text-align: center;
+    border-bottom: 0.2rem solid $light-text-color;
+    &-link {
+      margin-right: 32px;
+      font-size: 2rem;
+      text-decoration: none;
+      i[class*="facebook"] {
+        color: $facebook-color;
+      }
+      i[class*="twitter"] {
+        color: $twitter-color;
+      }
+      i[class*="instagram"] {
+        color: $instagram-color;
+      }
+    }
+  }
+}
